@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-Forms</title>
+  </head>
+  <body>
+    <h2>Form to apply</h2>
+    <form action="post">
+      <div>
+        <label for="username">Enter your username: </label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="username"
+        />
+        <br />
+        <br />
+        <label for="password">Enter your password: </label>
+        <input type="number" name="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Sdelect your gender: </label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="vehicle1" name="vehicle" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle" value="Boat" />
+        <label for="vehicle3"> I have a boat</label>
+      </div>
+
+      <div>
+        <label for="comment">Enter your comment here</label>
+        <br>
+        <textarea name="comment" rows="4" cols="50"></textarea>
+      </div>
+      <div>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+      </select>
+      </div>
+    </form>
+
+  </body>
+</html>
