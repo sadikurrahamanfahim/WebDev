@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector*/
+        div{
+            background-color: red;
+        }
+        /* Class Selector*/
+        .blue{
+            background-color: blue;
+        }
+        /* ID Selector*/
+        #brown{
+            background-color: brown;
+        }
+        /* Child Selector*/
+        div > p{
+            background-color: antiquewhite;
+        }
+
+        /* Descendant Selector */
+        div p{
+            background-color: antiquewhite;
+        }
+
+        /* Universal Selector*/
+        *{
+            margin: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: aquamarine;
+        }
+        a:link{
+            color: green;
+        }
+        /* a active works when the link is clicked */
+        a:active{
+            color: antiquewhite;
+        }
+        a:hover{
+            color: aqua;
+        }
+        /* this psuedocode is used to apply css to the first child */
+        p:first-child{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a div with element selector ex.
+    </div>
+
+    <div class="blue">
+        This is a div with class selector ex.
+    </div>
+
+    <div id="brown">
+        This is a div with ID selector ex.
+    </div>
+
+    <div>
+        This is a div with child selector ex.
+        <p>this is the first child of div</p>
+        <p>Here p tag is child class of div</p>
+    </div>
+
+    <!-- With pesuodo selecor changing visited links color to aquamarine -->
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.google.com">Go to Google</a>
+</body>
+</html>
