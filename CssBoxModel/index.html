@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: aqua;
+        }
+        /* this is ex of border radius with % */
+        .box1{
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid grey;
+            border-radius: 20%;
+        }
+        .box1:hover{
+            border-radius: 40px;
+            background-color: antiquewhite;
+        }
+        /* this is ex of border radius in px */
+        .box2{
+            border-radius: 20px;
+            padding: 20px;
+            border: 2px solid yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am box1
+    </div>
+
+    <div class="box box2">
+        I am box2
+    </div>
+</body>
+
+</html>
