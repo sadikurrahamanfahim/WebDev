@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+
+        .box1 {
+            border: 2px solid black;
+            display: inline;
+            /* turns block into inline */
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+
+        .box2 {
+            border: 2px solid black;
+            display: inline-block;
+            /* turns block into inline and let us specify width */
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+
+        .box3 {
+            border: 2px solid black;
+            display: block;
+            /* turns block into inline */
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+
+        .box4 {
+            border: 2px solid black;
+            display: none;
+            /*Removes the element with space*/
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+
+        .box5 {
+            border: 2px solid black;
+            visibility: hidden;
+            /*Removes the element but the space remains in place*/
+            margin: 20px;
+            padding: 20px;
+            width: 240px;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="box">
+        I am box
+    </div>
+    <div class="box1">
+        I am box 1
+    </div>
+    <div class="box2">
+        I am box 2
+    </div>
+    <div class="box3">
+        I am box 3
+    </div>
     
+    <div class="box4">
+        I am box 4
+    </div>
+    <div class="box5">
+        I am box 5
+    </div>
 </body>
+
 </html>
