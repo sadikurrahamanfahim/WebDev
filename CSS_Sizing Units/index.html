@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+        div {
+            width: 80vw;
+            /* that defines that 80% of the veiw width */
+            background-color: antiquewhite;
+            text-align: center;
+            margin: auto;
+        }
+
+        .em {
+            background-color: aquamarine;
+            margin-top: 20px;
+            font-size: 2em;
+            /*that defines that font size will be double compares to its original*/
+        }
+
+        div div{
+            background-color: red;
+            width: 50%;
+            /* the 50% defines that the child element will have half of its parent's width */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is a div with 80% of view width
+        <div>
+            this is the child div
+        </div>
+    </div>
+    <div class="em">
+        this div is example of <b>em</b> unit
+    </div>
+</body>
+
+</html>
