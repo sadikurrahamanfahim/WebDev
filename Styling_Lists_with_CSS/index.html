@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List with CSS</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        nav ul li {
+            list-style: none;
+            padding: 20px;
+        }
+        nav{
+            background-color: antiquewhite;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main ul li {
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+
+        main ol li {
+            background-color: aquamarine;
+            list-style-position: inside;
+            border: 2px solid blanchedalmond;
+        }
+
+        .image li {
+            list-style-type: ":)";
+            /* list-style-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fcoil-kt%2Fcoil%2Fissues%2F540&psig=AOvVaw3kk451a1MNkBlrCSkZ0qmi&ust=1720011402080000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOiY1vaziIcDFQAAAAAdAAAAABAQ); */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <ul>
+            <li>this</li>
+            <li>is</li>
+            <li>example</li>
+            <li>of bacnkground color</li>
+        </ul>
+
+        <ol>
+            <li>this</li>
+            <li>is</li>
+            <li>example</li>
+            <li>of bacnkground color</li>
+        </ol>
+
+        <ul class="image">
+            <li>This </li>
+            <li>is </li>
+            <li>unorder list </li>
+            <li>with image listing </li>
+            <li>example </li>
+        </ul>
+    </main>
+</body>
+
+</html>
