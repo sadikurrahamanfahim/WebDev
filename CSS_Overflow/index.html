@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Overflow</title>
+</head>
+<style>
+    .box {
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+        overflow: auto;
+        /* This is the example of overflow with auto */
+    }
+
+    .box1 {
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+        overflow: scroll;
+        /* This is the example of overflow with scroll */
+    }
+
+    .box2 {
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+        overflow: scroll;
+        white-space: nowrap;
+        /* This is the example of overflow with scroll and nowrap whitespace */
+    }
+
+    .box3{
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+        overflow: auto;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .box4{ 
+        border: 2px solid black;
+        height: 20vh;
+        width: 20vw;
+        overflow-x: hidden;
+        overflow-y: scroll; /*Can define x and y property */
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos. Minus tempora alias qui eveniet nisi
+        magnam. Aperiam quod perspiciatis debitis ullam libero nisi, neque cum, dolor totam, nesciunt suscipit
+        laboriosam! Odio voluptatibus, quas modi culpa eaque tempora ducimus ipsa aut, minus impedit placeat tempore.
+        Facere, dicta itaque fugiat eos velit consequatur odit.
+    </div>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos. Minus tempora alias qui eveniet nisi
+        magnam. Aperiam quod perspiciatis debitis ullam libero nisi, neque cum, dolor totam, nesciunt suscipit
+        laboriosam! Odio voluptatibus, quas modi culpa eaque tempora ducimus ipsa aut, minus impedit placeat tempore.
+        Facere, dicta itaque fugiat eos velit consequatur odit.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos. Minus tempora alias qui eveniet nisi
+        magnam. Aperiam quod perspiciatis debitis ullam libero nisi, neque cum, dolor totam, nesciunt suscipit
+        laboriosam! Odio voluptatibus, quas modi culpa eaque tempora ducimus ipsa aut, minus impedit placeat tempore.
+        <!-- The content will wraped in one line  -->
+    </div>
+
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos. Minus tempora alias qui eveniet nisi
+        magnam. Aperiam quod perspiciatis debitis ullam libero nisi, neque cum, dolor totam, nesciunt suscipit
+        laboriosam! Odio voluptatibus, quas modi culpa eaque tempora ducimus ipsa aut, minus impedit placeat tempore.
+        Facere, dicta itaque fugiat eos velit consequatur odit.
+    </div>
+
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, dignissimos. Minus tempora alias qui eveniet nisi
+        magnam. Aperiam quod perspiciatis debitis ullam libero nisi, neque cum, dolor totam, nesciunt suscipit
+        laboriosam! Odio voluptatibus, quas modi culpa eaque tempora ducimus ipsa aut, minus impedit placeat tempore.
+        Facere, dicta itaque fugiat eos velit consequatur odit.
+    </div>
+</body>
+
+</html>
