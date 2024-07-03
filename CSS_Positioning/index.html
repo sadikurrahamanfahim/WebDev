@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 333px;
+            width: 80vw;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .box1 {
+            background-color: aliceblue;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: antiquewhite;
+            position: relative; /*relative let us define position as we wish*/
+            top: -45px;
+            left: 20px;
+        }
+
+        .box3 {
+            background-color: aqua;
+            position: absolute; /*finds the nearest absolute position parent and follows*/
+            top: 20px;;
+            left: 50px; 
+        }
+
+        .box4 {
+            background-color: aquamarine;
+            position: fixed;
+            top: 0px;  /* this is how we can position to a fixed navbar to the html page*/
+            left: 0px;
+            width: 100vw;
+            height: 40px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .parent{
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid purple; 
+            position: absolute;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4">This is navbar</div>
+    </div>
+
+</body>
+
+</html>
