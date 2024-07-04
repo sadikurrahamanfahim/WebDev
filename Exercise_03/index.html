@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_3(Designing a card)</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 0px 1px rgb(219, 214, 214);
+            width: 80vw;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .imgcontainer {
+            margin: 4%;
+            position: relative;
+            height: 20%;
+        }
+
+        .img {
+            margin-top: 4%;
+            border-radius: 20px;
+            width: 100%
+        }
+
+        button {
+            background-color: rgb(255, 255, 255);
+            border: none;
+            box-shadow: 0px 0px 0px 1px rgb(219, 214, 214);
+            border-radius: 20px;
+            margin: 5px;
+            color: grey;
+            padding: 3px 10px 3px 10px;
+        }
+
+        button:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        .para {
+            margin-left: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div h2 {
+
+            color: rgb(48, 48, 48);
+        }
+
+        div p {
+            color: grey;
+        }
+
+        .lastbutton {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .lastone {
+            background-color: rgb(203, 213, 236);
+            color: rgb(6, 116, 241);
+            box-shadow: none;
+            padding: 10px 20px 10px 20px;
+            font-weight: bold;
+        }
+
+        .lastone:hover {
+            background-color: rgb(177, 227, 210);
+            padding: 12px 22px 12px 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgcontainer">
+            <img class="img" src="card.webp" alt="cardimg">
+        </div>
+        <div class="buttons">
+            <button style="margin-left: 20px;">Nature</button>
+            <button>Lake</button>
+        </div>
+
+        <div class="para">
+            <h2>Lago di Braies</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam cumque nam dicta laudantium
+                soluta aliquid consequuntur provident accusantium, minus ex voluptate velit?</p>
+        </div>
+
+        <div class="lastbutton">
+            <button class="lastone">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
