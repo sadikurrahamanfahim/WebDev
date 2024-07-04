@@ -26,29 +26,34 @@
 
         .box2 {
             background-color: antiquewhite;
-            position: relative; /*relative let us define position as we wish*/
+            position: relative;
+            /*relative let us define position as we wish*/
             top: -45px;
             left: 20px;
         }
 
         .box3 {
             background-color: aqua;
-            position: absolute; /*finds the nearest absolute position parent and follows*/
-            top: 20px;;
-            left: 50px; 
+            position: absolute;
+            /*finds the nearest absolute position parent and follows*/
+            top: 20px;
+            ;
+            left: 50px;
         }
 
         .box4 {
             background-color: aquamarine;
             position: fixed;
-            top: 0px;  /* this is how we can position to a fixed navbar to the html page*/
+            top: 0px;
+            /* this is how we can position to a fixed navbar to the html page*/
             left: 0px;
             width: 100vw;
             height: 40px;
             padding-top: 20px;
             text-align: center;
         }
-        .box5{
+
+        .box5 {
             position: sticky;
             bottom: 0px;
             left: 0px;
@@ -59,10 +64,11 @@
             z-index: -1;
 
         }
-        .parent{
+
+        .parent {
             padding: 10px;
             margin: 20px;
-            border: 3px solid purple; 
+            border: 3px solid purple;
             position: absolute;
             top: 200px;
         }
@@ -70,6 +76,8 @@
 </head>
 
 <body>
+
+    <!-- Exception-NOTE: transform, filter or perspective properties can also make an element appear as positioned -->
     <div class="parent">
         <div class="box box1"></div>
         <div class="box box2"></div>
