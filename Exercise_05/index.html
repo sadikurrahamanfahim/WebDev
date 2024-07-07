@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 20px;
+        }
+        
+        li:hover{
+            cursor: pointer;
+        }
+
+        .boxes {
+            margin: auto;
+            margin-top: 20px;
+            width: 95vw;
+            height: 80vw;
+            display: flex;
+            background-color: grey;
+        }
+
+        .box {
+            margin: auto;
+            width: 45%;
+            height: 95%;
+            background-color: aliceblue;
+        }
+
+        .box:first-child {
+            background-color: antiquewhite;
+        }
+
+        .image {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 100%;
+        }
+        .text{
+            border: 2px solid black;
+            padding: 10%;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 50px;
+        }
+        footer{
+            font-size: larger;
+            text-align: center;
+            background-color: rgb(255, 198, 123);
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Details</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_640.png" alt="" class="image"
+            width="40px">
+
+            <div class="text">Welcome to this Sigma Web Develpoment Express</div>
+    </main>
+    <footer>
+        <div>
+            This is footer
+        </div>
+        copyright@ something something
+    </footer>
+</body>
+
+</html>
