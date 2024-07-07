@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+        /* .box::first-line {
+            color: aquamarine;
+        }
+
+        .box::first-letter {
+            color: red;
+        }
+        .boxes *{
+            border: 2px solid black;
+        }
+        [data-color="primary"]{
+            padding-top: 20px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: aqua;
+        } */
+
+        .box:nth-last-child(1){
+            background-color: red;
+        }
+
+        .boxes::before{
+            content: "lets learn first bfore content";
+        }
+        .boxes::after{
+            content: "Then you do something after content";
+        }
+
+        ::selection{
+            color: bisque;
+            background-color: black;
+        }
+
+        .form::placeholder{
+            color: rgb(232, 163, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aperiam consequuntur aut
+            alias sed vel, quae repudiandae! Molestias voluptate nostrum natus sapiente doloribus similique ex commodi
+            alias quod inventore? In nesciunt totam molestiae ut animi vitae debitis quidem, quae quia eligendi, culpa
+            cupiditate blanditiis doloribus, omnis est. Eum non aliquam quas amet nihil id nisi veritatis voluptate
+            reiciendis, voluptatem aut blanditiis libero ad perferendis unde dicta cum vero magnam error repellat modi
+            excepturi veniam dolorem aliquid? Aliquid quibusdam beatae libero nihil earum consequuntur a, animi vitae
+            corporis nostrum odio molestias et minus, atque harum?</div>
+        <div class="box">HeY I am a box</div>
+        <div class="box">HeY I am a box</div>
+    </div>
+    <input class="form" type="text" placeholder="Enter your name">
+
+</body>
+
+</html>
