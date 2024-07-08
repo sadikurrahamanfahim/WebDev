@@ -32,10 +32,54 @@
             /* justify-content: space-around; */
             justify-content: space-between;
         }
-    </style>
+        .container3{
+            border: 2px solid black;
+            height: 20vw;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            gap: 20px;
+            /* gap: 40px 10px; can write in short */
+            /* row-gap: 30px;  can define gap individually
+            column-gap: 40px; */
+        }
+        .container4{
+            border: 2px solid black;
+            height: 20vw;
+            display: flex;
+        }
+         .item{
+            flex-grow: 1;
+         }
+         .item1{
+            flex-grow: 2;
+            align-self: center;
+         }
+        </style>
 </head>
 <body>
     <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container3">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
@@ -87,6 +131,16 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
+    </div>
+
+    <div class="container4">
+        <div class="box item item1"></div>
+        <div class="box item"></div>
+        <div class="box item"></div>
+        <div class="box item"></div>
+        <div class="box item"></div>
+        <div class="box item"></div>
+        <div class="box item"></div>
     </div>
 </body>
 </html>
