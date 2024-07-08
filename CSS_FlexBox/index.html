@@ -7,11 +7,12 @@
     <style>
         .container{
             border: 2px solid black;
-            height: 80vw;
+            height: 40vw;
             display: flex;
             align-items:center;
             justify-content: center;
             flex-direction: column-reverse;
+            flex-wrap: wrap; /*To avoid overdlow we have to use flexwrap*/
         }
 
         .box{
@@ -23,9 +24,11 @@
 
         .container2{
             border: 2px solid black;
-            height: 80vw;
+            height: 20vw;
             display: flex;
-            align-items:center;
+            align-items:center; /*When we have only one line we can use align items*/
+            align-content: center;/*In term of multiple lines we have to use alihn content*/
+            flex-wrap: wrap; /*To avoid overdlow we have to use flexwrap*/
             /* justify-content: space-around; */
             justify-content: space-between;
         }
@@ -56,6 +59,14 @@
     </div>
 
     <div class="container2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
