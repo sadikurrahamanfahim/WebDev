@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(83, 83, 83);
+        color: rgb(46, 46, 46);
     }
 
     nav {
@@ -31,8 +31,20 @@
 
     nav ul li {
         padding: 10px;
+        display: flex;
+        align-items: center;
     }
-
+        
+    .text{
+        font-size: 250%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    .bold{
+        font-weight: bold;
+    }
 </style>
 
 <body>
@@ -41,14 +53,27 @@
             <img src="UE-Logo-1.webp" alt="logo" width="170">
         </div>
         <ul>
-            <li>Products</li>
-            <li>Pricing</li>
-            <li>Resources</li>
-            <li>About Us</li>
-            <li>Security and complience</li>
+            <li><span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li><span>Pricing</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li><span>Resources</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li><span>About Us</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li><span>Security and complience</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
             <li> <img src="language icon.jpg" alt="icon" width="25px"></li>
         </ul>
     </nav>
+    <main>
+        <div class="text">Download &nbsp;<div class="bold">UltraEdit</div>&nbsp; for Windows <img style="margin-left: 20px;" src="Reviews.png" alt="reviews"></div>
+    </main>
 </body>
 
 </html>
