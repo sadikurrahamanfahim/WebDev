@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS_Transforms</title>
     <style>
-        .container{
+        .container {
             height: 80vw;
             width: 80vw;
-            border:  2px solid orange;
+            border: 2px solid orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .box{
-            height: 55px;
-            width: 55px;
+        .box {
+            height: 200px;
+            width: 200px;
             background-color: beige;
             border: 1px solid black;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            transform: rotate(20deg);
+            /* transform: rotate(20deg); */
+            /* transform: rotate(0.15turn); */
+            /* transform: rotateX(50deg);
+            transform: rotateY(50deg);
+            transform: rotateZ(50deg); 
+            transform: rotate3d(20deg);*/
+
+            /* transform: scale(1.2);
+            transform: scaleX(1.2);
+            transform: scaleY(1.2); */
+            /* transform: scale3d(1.2); */
+
+            /* transform: skew(5deg); */
+            /* transform: translate(34px); */
+
+            /* multiple transform property 
+            transform: skew(5deg) translate(10%) translateY(20%) rotate(20deg);*/
+
+            /* transform-origin: 10% 10%; origin is used to move center point of trhe box */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="box">
@@ -31,4 +54,5 @@
         </div>
     </div>
 </body>
+
 </html>
