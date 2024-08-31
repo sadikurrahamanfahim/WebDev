@@ -39,7 +39,7 @@
     }
 
     .text {
-        font-size: 48px;
+        font-size: clamp(20px, 8vw, 48px);
         padding-top: 50px;
         display: flex;
         justify-content: center;
@@ -74,14 +74,61 @@
         background-color: #00b6d1;
         padding: 12px 20px;
         border-radius: 5px;
+    }
+
+    .aquabutton span a {
+        text-decoration: none;
         font-size: 14px;
         font-style: normal;
         font-weight: bold;
         color: white;
     }
-    .mark{
+
+    .mark {
+        display: flex;
         margin-top: 100px;
         align-self: flex-start;
+        align-items: center;
+    }
+
+    .container1 {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .box {
+        height: 200px;
+        width: 300px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .ue_copied_hash {
+        font-size: 7px;
+        width: 280px;
+        margin-top: 5px;
+    }
+
+    .hash {
+        margin-top: 10px;
+        font-size: xx-small;
+    }
+
+    .btn {
+        background-color: #5cb85c;
+        color: white;
+        font-weight: bold;
+        padding: 5px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        margin-top: 10px;
     }
 </style>
 
@@ -125,8 +172,204 @@
                     style="margin-left: 20px;" src="Reviews.png" alt="reviews"></div>
             <div class="text1">Download and try UltraEdit before you buy it! This download includes the full Windows
                 version of the text editor.</div>
-            <div class="aquabutton"><span>DOWNLOAD MAC OR LINUX VERSION</span></div>
-            <div class="mark"><img src="UltraEditLogo.png" width="60px" alt=""></div>
+            <div class="aquabutton"><span><a href="">DOWNLOAD MAC OR LINUX VERSION</a></span></div>
+            <div class="mark"><img src="UltraEditLogo.png" width="60px" alt=""> <span
+                    style="font-size: 24px; margin-left: 20px;">Download UltraEdit</span> <span
+                    style="font-size: small; margin-left: 5px;">v2024.0(released 2024-04-19) | Hotfix</span></div>
+
+            <div class="container1">
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>English
+                            </strong?>
+                        </h3>
+                        <h4><small>&nbsp;</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1blulr8*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>Deutsch
+                            </strong?>
+                        </h3>
+                        <h4><small>German</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*qk7qbm*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">F33B9A2FACED863D26B8FA5AC0979F053FD29A6DC37888AA0E262F566AABEFE9
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>Italiano
+                            </strong?>
+                        </h3>
+                        <h4><small>Italian</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*16dh76x*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">D5E23579FD67132828FFC74E2B08F9B878BDFA515217ACCA8B58F6A0C6E5DD54
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>Español
+                            </strong?>
+                        </h3>
+                        <h4><small>Spanish</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*u4o6q7*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">FD9B6B4A3D02E6FB75C3A15B9B13318C40B14710ADD0027464EA9181BB6071D7
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>français
+                            </strong?>
+                        </h3>
+                        <h4><small>French</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*u4o6q7*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">F452223049967F599EE3DA061C3C948B0508E40A75269B4789589DA0FCE75FED
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>Português brasileiro
+                            </strong?>
+                        </h3>
+                        <h4><small>Brazilian Portuguese</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*ew4ga*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">2019F53EEA55E41409126B8D56247A1F33D6723B069E330DA144AE92694034FA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>日本
+                            </strong?>
+                        </h3>
+                        <h4><small>Japanese</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe?_gl=1*1w2h63w*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">F7D853BB77A8CED740654508E6EB0C223826EF9C998211792BF4177EF4D8F74F
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>한국어
+                            </strong?>
+                        </h3>
+                        <h4><small>Korean</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*1w2h63w*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">ED19797DD939906C7623BC993A677823478CEF750D0AAB11FEFA4F63FFCE9846
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>中国
+                            </strong?>
+                        </h3>
+                        <h4><small>Chinese</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*vd60ns*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">5098F8327FE148A5ABF9D21CB2BF5CCDA2D253F5F3B14D7D45C2B83301FEDF1E
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bg-light">
+                        <h3>
+                            <strong?>中國
+                            </strong?>
+                        </h3>
+                        <h4><small>Traditional Chinese</small></h4>
+
+                        <div class="buttons">
+                            <a href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*10xzblq*_gcl_au*NjU2NDkzNzc4LjE3MTY4MTQ4OTk.*_ga*MTgzMTcxOTMyNi4xNzA3ODk2NTUy*_ga_QNXHVTPWNS*MTcxODYxMjA0MS4xOTYuMS4xNzE4NjEyMDUzLjQ4LjAuMA.."
+                                class="btn btn-download">Download 64-bit</a>
+                        </div>
+                        <div class="hash">
+                            SHA256
+                            <p class="ue_copied_hash">691CEC203A5EDBD6E94426161E9B6CFA111CB774E7A219CB8C65D9B4410FA3D2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
